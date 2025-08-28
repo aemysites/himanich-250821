@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .cards > ul {
   list-style: none;
   margin: 0;
@@ -24,4 +25,162 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+
+.cards.cards33 {
+  background: #f6f6f6;
+  padding: 40px 0;
+}
+
+/* Grid for 2x2 card layout */
+.cards.cards33 > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Card container: flex row, top-align, tighter padding */
+.cards.cards33 > ul > li {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgb(0 0 0 / 6%);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  min-height: 180px;
+  border: none;
+}
+
+/* Image block: flush left/top, larger, no margin */
+.cards.cards33 .cards-card-image {
+  flex: 0 0 180px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+/* Make image fill .cards-card-image vertically, align with text block */
+.cards.cards33 .cards-card-image picture,
+.cards.cards33 .cards-card-image img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  background: #eaeaea;
+  margin: 0;
+}
+
+/* Text content: less left padding, top align, tighter vertical gap */
+.cards.cards33 .cards-card-body {
+  flex: 1 1 auto;
+  padding: 22px 30px 18px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 0;
+}
+
+/* Badge and read-time: horizontal row, less vertical gap */
+.cards.cards33 .cards-card-body p:nth-child(1),
+.cards.cards33 .cards-card-body p:nth-child(2) {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.cards.cards33 .cards-card-body p:nth-child(1) {
+  background: #ededed;
+  color: #888;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  border-radius: 10px;
+  padding: 4px 18px;
+  margin-right: 12px;
+}
+
+.cards.cards33 .cards-card-body p:nth-child(2) {
+  color: #aaa;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+/* Reduce space below badge/read-time */
+
+/* Card title: margin up, slightly larger */
+.cards.cards33 .cards-card-body h3 {
+  font-family: var(--heading-font-family);
+  font-size: 26px;
+  font-weight: 700;
+  color: #181818;
+  margin: 3px 0 6px;
+  line-height: 1.13;
+  letter-spacing: 0.01em;
+}
+
+/* Card description: less bottom margin */
+.cards.cards33 .cards-card-body p:nth-child(4) {
+  font-size: 15.5px;
+  color: #626262;
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+
+/* "Read" link: left-align, margin-top to match original */
+.cards.cards33 .cards-card-body p:last-child {
+  font-size: 14.5px;
+  color: #333;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 8px;
+}
+
+/* Remove top margin from all text blocks in card body */
+.cards.cards33 .cards-card-body p {
+  margin-top: 0;
+}
+
+/* Responsive: stack on mobile, image above text, center image */
+@media (width <= 900px) {
+  .cards.cards33 > ul {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .cards.cards33 > ul > li {
+    flex-direction: column;
+    min-height: 0;
+    align-items: stretch;
+  }
+
+  .cards.cards33 .cards-card-image {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 24px 0 0;
+    margin: 0 0 16px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards.cards33 .cards-card-image picture,
+  .cards.cards33 .cards-card-image img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .cards.cards33 .cards-card-body {
+    padding: 16px 16px 20px;
+  }
 }
