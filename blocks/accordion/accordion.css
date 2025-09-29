@@ -1,8 +1,8 @@
+/* stylelint-disable no-descending-specificity */
 .accordion details {
   border: 1px solid #dadada;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .accordion details + details {
   margin-top: 24px;
 }
@@ -58,4 +58,208 @@
 .accordion details[open] .accordion-item-body {
   border-top: 1px solid #dadada;
   background-color: var(--background-color);
+}
+
+
+.accordion.accordion17 {
+  max-width: 420px;
+  margin: 64px auto;
+  background: #fff;
+  border-radius: 26px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  /* Use a minimum height to encourage vertical centering for short content */
+  min-height: 60vh;
+}
+
+@media (width >= 900px) {
+  .accordion.accordion17 {
+    margin-top: 72px;
+    margin-bottom: 72px;
+  }
+}
+
+.accordion.accordion17 details {
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  margin: 0;
+  box-shadow: 0 6px 32px 0 rgb(60 60 60 / 8%);
+  transition: box-shadow 0.23s;
+  overflow: visible;
+}
+
+.accordion.accordion17 details[open] {
+  box-shadow: 0 12px 44px 0 rgb(60 60 60 / 19%);
+}
+
+.accordion.accordion17 details + details {
+  margin-top: 0;
+}
+
+/* FAQ summary row: text left, icon right, aligned center and spaced */
+.accordion.accordion17 summary,
+.accordion.accordion17 .accordion-item-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+  padding: 28px 44px 28px 32px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1A1A1A;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  user-select: none;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.accordion.accordion17 summary::-webkit-details-marker {
+  display: none;
+}
+
+/* FAQ question text: relaxed spacing from icon and edge */
+.accordion.accordion17 summary p,
+.accordion.accordion17 .accordion-item-label p {
+  margin: 0;
+  color: #1A1A1A;
+  font-weight: 700;
+  font-size: 22px;
+  flex: 1 1 auto;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  padding-right: 30px;
+  overflow-wrap: break-word; /* Modern and recommended property for word-breaking */
+}
+
+/* Icon: plus/minus inside a circle, centered and with right margin from card edge */
+.accordion.accordion17 summary::after,
+.accordion.accordion17 .accordion-item-label::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-left: 0;
+  margin-right: 6px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: relative;
+  border: 2.5px solid #D12843;
+  background: none;
+  transition: border-color 0.2s;
+}
+
+/* Horizontal bar for minus/plus: always visible */
+.accordion.accordion17 summary::before,
+.accordion.accordion17 .accordion-item-label::before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  width: 16px;
+  height: 3px;
+  background: #D12843;
+  border-radius: 2px;
+  transform: translateY(-50%);
+  transition: background 0.2s;
+}
+
+/* Vertical bar for plus (only when closed) */
+.accordion.accordion17 details:not([open]) summary::after,
+.accordion.accordion17 details:not([open]) .accordion-item-label::after {
+  position: relative;
+}
+
+.accordion.accordion17 details:not([open]) summary::after {
+  /* Overlay vertical bar for plus sign inside circle */
+  content: "";
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  width: 3px;
+  height: 16px;
+  background: #D12843;
+  border-radius: 2px;
+  transform: translateY(-50%);
+}
+
+/* Only the horizontal bar (minus) for open state */
+.accordion.accordion17 details[open] summary::before,
+.accordion.accordion17 details[open] .accordion-item-label::before {
+  /* Only horizontal bar (minus) */
+}
+
+/* Remove vertical bar for minus icon when open */
+.accordion.accordion17 details[open] summary::after {
+  background: none;
+}
+
+.accordion.accordion17 .accordion-item-body {
+  padding: 0 44px 28px 32px;
+  font-size: 19px;
+  color: #444;
+  background: #fff;
+  border-top: 1px solid #eee;
+  margin: 0;
+  line-height: 1.75;
+  box-sizing: border-box;
+}
+
+.accordion.accordion17 details:not([open]) .accordion-item-body {
+  display: none;
+}
+
+/* Responsive adjustments: card and icon size, padding, vertical gap */
+@media (width <= 600px) {
+  .accordion.accordion17 {
+    max-width: 100vw;
+    border-radius: 0;
+    padding: 0;
+    gap: 22px;
+    min-height: unset;
+    margin: 30px auto;
+  }
+
+  .accordion.accordion17 summary,
+  .accordion.accordion17 .accordion-item-label {
+    padding: 18px 14px 18px 12px;
+    font-size: 18px;
+    min-height: 56px;
+  }
+
+  .accordion.accordion17 .accordion-item-body {
+    padding: 0 14px 18px 12px;
+    font-size: 16px;
+  }
+
+  .accordion.accordion17 summary::after,
+  .accordion.accordion17 .accordion-item-label::after {
+    width: 24px;
+    height: 24px;
+    border-width: 2px;
+    margin-right: 0;
+  }
+
+  .accordion.accordion17 summary::before,
+  .accordion.accordion17 .accordion-item-label::before {
+    width: 12px;
+    height: 2px;
+    right: 7px;
+  }
+
+  .accordion.accordion17 details:not([open]) summary::after {
+    width: 2px;
+    height: 12px;
+    right: 11px;
+  }
 }
