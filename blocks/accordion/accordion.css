@@ -1,8 +1,8 @@
+/* stylelint-disable no-descending-specificity */
 .accordion details {
   border: 1px solid #dadada;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .accordion details + details {
   margin-top: 24px;
 }
@@ -58,4 +58,114 @@
 .accordion details[open] .accordion-item-body {
   border-top: 1px solid #dadada;
   background-color: var(--background-color);
+}
+
+
+.accordion.accordion14 {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.accordion.accordion14 .accordion-item {
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+.accordion.accordion14 .accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion.accordion14 .accordion-item-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 56px;
+  padding: 16px 24px;
+  cursor: pointer;
+  position: relative;
+  background: transparent;
+}
+
+.accordion.accordion14 .accordion-item-label::-webkit-details-marker,
+.accordion.accordion14 .accordion-item-label::marker {
+  display: none;
+}
+
+.accordion.accordion14 .accordion-item-label p {
+  color: #212121;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* PLUS/MINUS ICON (overlayed bars) */
+.accordion.accordion14 .accordion-item-label::before,
+.accordion.accordion14 .accordion-item-label::after {
+  content: "";
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  width: 20px;
+  height: 2px;
+  background: #757575;
+  border-radius: 1px;
+  pointer-events: none;
+  display: block;
+}
+
+/* Horizontal bar (minus) always visible */
+.accordion.accordion14 .accordion-item-label::before {
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+/* Vertical bar (plus) overlays minus to make plus, hides when open */
+.accordion.accordion14 .accordion-item-label::after {
+  transform: translateY(-50%) rotate(90deg);
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+/* Hide vertical bar when open (= minus only) */
+.accordion.accordion14 details[open] > .accordion-item-label::after {
+  opacity: 0;
+}
+
+/* Show vertical bar when closed (= plus) */
+.accordion.accordion14 details:not([open]) > .accordion-item-label::after {
+  opacity: 1;
+}
+
+/* Answer panel styling when open */
+.accordion.accordion14 .accordion-item-body {
+  padding: 0 24px 16px;
+}
+
+.accordion.accordion14 .accordion-item-body p {
+  color: #757575;
+  font-size: 14px;
+  margin: 8px 0 0;
+  padding-left: 8px;
+}
+
+/* Responsive adjustments */
+@media (width <= 600px) {
+  .accordion.accordion14 {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .accordion.accordion14 .accordion-item-label,
+  .accordion.accordion14 .accordion-item-body {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
