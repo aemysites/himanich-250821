@@ -1,40 +1,56 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Block header: matches example exactly
+  // Helper to find the main content container
+  function getMainContent(el) {
+    // Defensive: find the first .offcanvas-body or .pop-content
+    let body = el.querySelector('.offcanvas-body');
+    if (!body) body = el.querySelector('.pop-content');
+    return body || el;
+  }
+
+  // 1. Header row
   const headerRow = ['Hero (hero5)'];
 
-  // Find the main grid containing content and image
-  const mainGrid = element.querySelector('.grid-layout');
-  // Grid may have two children: one grid with text/buttons, one image
-  const children = Array.from(mainGrid.children);
-
-  // Find the image element for row 2
-  const image = children.find(child => child.tagName === 'IMG');
-
-  // Find the content block: grid with text and buttons
-  let textBlock = null;
-  const containerGrid = children.find(child => child.classList.contains('container'));
-  if (containerGrid) {
-    textBlock = containerGrid.querySelector('.section');
+  // 2. Background image row (optional)
+  // Try to find a prominent image (not SVG data URI)
+  let bgImg = null;
+  const imgEls = element.querySelectorAll('img');
+  for (const img of imgEls) {
+    if (img.src && !img.src.startsWith('data:')) {
+      bgImg = img;
+      break;
+    }
   }
+  const bgImgRow = [bgImg ? bgImg : ''];
 
-  // Defensive fallback if section is missing
-  if (!textBlock && containerGrid) {
-    // Just use the container grid if section is missing
-    textBlock = containerGrid;
-  }
+  // 3. Content row: title, subheading, CTA
+  const mainContent = getMainContent(element);
+  // Defensive: find heading, paragraph, and CTA
+  let title = mainContent.querySelector('h4, h1, h2, h3');
+  let subheading = null;
+  let para = null;
+  let cta = null;
+  // Try to find subheading and paragraph
+  const ps = mainContent.querySelectorAll('p');
+  if (ps.length > 0) para = ps[0];
+  // Try to find CTA (a with href)
+  cta = mainContent.querySelector('a[href]');
 
-  // Defensive fallback if image is missing
-  const imageCell = image ? image : '';
-  const textCell = textBlock ? textBlock : '';
+  // Compose content cell
+  const contentCell = [];
+  if (title) contentCell.push(title);
+  if (para) contentCell.push(para);
+  if (cta) contentCell.push(cta);
 
-  // Compose table data - 1 column, 3 rows
-  const cells = [
+  const contentRow = [contentCell.length ? contentCell : ''];
+
+  // Compose table
+  const table = WebImporter.DOMUtils.createTable([
     headerRow,
-    [imageCell],
-    [textCell]
-  ];
+    bgImgRow,
+    contentRow,
+  ], document);
 
-  const table = WebImporter.DOMUtils.createTable(cells, document);
+  // Replace the original element
   element.replaceWith(table);
 }

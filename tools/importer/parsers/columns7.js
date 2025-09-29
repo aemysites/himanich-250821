@@ -1,17 +1,51 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Header row: single column with block name
+  // Helper: extract logo (left column)
+  function getLogoSection() {
+    const leftSection = element.querySelector('.footer-brand__left');
+    if (leftSection) {
+      // Reference the <a> containing the logo
+      const logoLink = leftSection.querySelector('a');
+      return logoLink || '';
+    }
+    return '';
+  }
+
+  // Helper: extract left nav links (middle column)
+  function getLeftNav() {
+    const leftNav = element.querySelector('.footer-brand__navbar--left');
+    if (leftNav) {
+      // Reference the <ul> containing the links
+      const ul = leftNav.querySelector('ul');
+      return ul || '';
+    }
+    return '';
+  }
+
+  // Helper: extract right nav links (right column)
+  function getRightNav() {
+    const rightNav = element.querySelector('.footer-brand__navbar--right');
+    if (rightNav) {
+      // Reference the <ul> containing the links
+      const ul = rightNav.querySelector('ul');
+      return ul || '';
+    }
+    return '';
+  }
+
+  // Compose the table rows
   const headerRow = ['Columns (columns7)'];
-  // Find all immediate child divs (these are the columns)
-  const columnDivs = Array.from(element.querySelectorAll(':scope > div'));
-  // Extract main content from each column div
-  const contentRow = columnDivs.map(div => {
-    // Use the <img> if present, else fallback to the div itself
-    const img = div.querySelector('img');
-    return img ? img : div;
-  });
-  // Table: first row is header (one cell), second row is content (n cells)
-  const tableArr = [headerRow, contentRow];
-  const block = WebImporter.DOMUtils.createTable(tableArr, document);
-  element.replaceWith(block);
+  const contentRow = [
+    getLogoSection(),
+    getLeftNav(),
+    getRightNav(),
+  ];
+
+  // Build the table
+  const table = WebImporter.DOMUtils.createTable([
+    headerRow,
+    contentRow,
+  ], document);
+
+  element.replaceWith(table);
 }
