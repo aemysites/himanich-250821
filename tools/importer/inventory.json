@@ -1348,7 +1348,8 @@
           "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]",
           "section": "section-2"
         }
-      ]
+      ],
+      "key": "unknown4"
     },
     {
       "name": "Hero",
@@ -1754,7 +1755,8 @@
           "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]",
           "section": "section-2"
         }
-      ]
+      ],
+      "key": "unknown9"
     },
     {
       "name": "Accordion",
@@ -1986,7 +1988,8 @@
           "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]",
           "section": "section-2"
         }
-      ]
+      ],
+      "key": "unknown18"
     },
     {
       "name": "Cards",
@@ -2095,7 +2098,8 @@
           "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]",
           "section": "section-2"
         }
-      ]
+      ],
+      "key": "unknown25"
     },
     {
       "name": "unknown",
@@ -2108,7 +2112,8 @@
           "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]",
           "section": "section-2"
         }
-      ]
+      ],
+      "key": "unknown26"
     },
     {
       "name": "Hero",
