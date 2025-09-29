@@ -33,7 +33,6 @@
   padding: 40px 0;
 }
 
-/* Grid for 2x2 card layout */
 .cards.cards33 > ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -43,7 +42,6 @@
   padding: 0;
 }
 
-/* Card container: flex row, top-align, tighter padding */
 .cards.cards33 > ul > li {
   background: #fff;
   border-radius: 16px;
@@ -57,7 +55,6 @@
   border: none;
 }
 
-/* Image block: flush left/top, larger, no margin */
 .cards.cards33 .cards-card-image {
   flex: 0 0 180px;
   display: flex;
@@ -67,7 +64,6 @@
   margin: 0;
 }
 
-/* Make image fill .cards-card-image vertically, align with text block */
 .cards.cards33 .cards-card-image picture,
 .cards.cards33 .cards-card-image img {
   width: 170px;
@@ -79,7 +75,6 @@
   margin: 0;
 }
 
-/* Text content: less left padding, top align, tighter vertical gap */
 .cards.cards33 .cards-card-body {
   flex: 1 1 auto;
   padding: 22px 30px 18px 24px;
@@ -89,7 +84,6 @@
   min-width: 0;
 }
 
-/* Badge and read-time: horizontal row, less vertical gap */
 .cards.cards33 .cards-card-body p:nth-child(1),
 .cards.cards33 .cards-card-body p:nth-child(2) {
   display: inline-block;
@@ -117,9 +111,6 @@
   margin-right: 0;
 }
 
-/* Reduce space below badge/read-time */
-
-/* Card title: margin up, slightly larger */
 .cards.cards33 .cards-card-body h3 {
   font-family: var(--heading-font-family);
   font-size: 26px;
@@ -130,7 +121,6 @@
   letter-spacing: 0.01em;
 }
 
-/* Card description: less bottom margin */
 .cards.cards33 .cards-card-body p:nth-child(4) {
   font-size: 15.5px;
   color: #626262;
@@ -138,7 +128,6 @@
   margin: 0 0 8px;
 }
 
-/* "Read" link: left-align, margin-top to match original */
 .cards.cards33 .cards-card-body p:last-child {
   font-size: 14.5px;
   color: #333;
@@ -147,12 +136,10 @@
   margin-top: 8px;
 }
 
-/* Remove top margin from all text blocks in card body */
 .cards.cards33 .cards-card-body p {
   margin-top: 0;
 }
 
-/* Responsive: stack on mobile, image above text, center image */
 @media (width <= 900px) {
   .cards.cards33 > ul {
     grid-template-columns: 1fr;
@@ -182,5 +169,127 @@
 
   .cards.cards33 .cards-card-body {
     padding: 16px 16px 20px;
+  }
+}
+
+
+.cards.cards28 {
+  background: #fff;
+  position: relative;
+  min-height: 56px;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: visible;
+}
+
+/* Top gradient shadow */
+.cards.cards28::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 20px;
+  background: linear-gradient(to bottom, #efefef 65%, rgb(255 255 255 / 1%));
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Center the ul vertically and horizontally with flex */
+.cards.cards28 > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 56px;
+  list-style: none;
+  background: transparent;
+}
+
+/* Only show the first li as the "header", hide all others */
+.cards.cards28 > ul > li {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  width: auto;
+  min-height: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards.cards28 > ul > li:not(:first-child) {
+  display: none;
+}
+
+/* Layout: emoji smaller, acts as a minimal accent */
+.cards.cards28 > ul > li > .cards-card-body {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Emoji: make it very small, orange, and position it higher and closer to the heading */
+.cards.cards28 > ul > li > .cards-card-body:first-child {
+  margin-right: 0;
+  font-size: 0.82em;
+  color: #f80;
+  position: relative;
+  top: -13px;
+  left: 2px;
+  line-height: 0.8;
+  text-align: right;
+  display: flex;
+  align-items: flex-start;
+  min-width: 10px;
+  padding: 0;
+}
+
+/* Heading style: orange, bold, tight, single line */
+.cards.cards28 > ul > li > .cards-card-body:last-child > h3,
+.cards.cards28 > ul > li > .cards-card-body:last-child > h2,
+.cards.cards28 > ul > li > .cards-card-body:last-child > h4 {
+  color: #f80;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Hide all text except the heading in the "header" row */
+.cards.cards28 > ul > li > .cards-card-body:last-child > *:not(h3, h2, h4) {
+  display: none;
+}
+
+/* Remove excess spacing */
+
+@media (width <= 600px) {
+  .cards.cards28 {
+    min-height: 40px;
+  }
+
+  .cards.cards28 > ul > li > .cards-card-body:last-child > h3,
+  .cards.cards28 > ul > li > .cards-card-body:last-child > h2,
+  .cards.cards28 > ul > li > .cards-card-body:last-child > h4 {
+    font-size: 15px;
   }
 }
