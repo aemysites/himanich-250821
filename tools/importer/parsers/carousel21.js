@@ -1,30 +1,35 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Table header: must be exactly one column
+  // 1. Header row
   const headerRow = ['Carousel (carousel21)'];
+  const rows = [headerRow];
 
-  // Find all card-body containers (each is a slide)
-  const cardBodies = element.querySelectorAll('.card-body');
-  
-  // Build rows for each slide
-  const rows = [];
-  cardBodies.forEach(cardBody => {
-    // First column: image (mandatory)
-    const img = cardBody.querySelector('img');
-    // Second column: text content (optional)
-    const heading = cardBody.querySelector('.h4-heading');
-    let textCell = '';
-    if (heading && heading.textContent.trim()) {
-      // Use semantic heading element
-      const h2 = document.createElement('h2');
-      h2.textContent = heading.textContent.trim();
-      textCell = h2;
+  // 2. Find the carousel wrapper
+  const swiper = element.querySelector('.swiper.primary-swiper');
+  if (!swiper) {
+    return;
+  }
+
+  // 3. Find all slides
+  const slides = swiper.querySelectorAll('.swiper-slide');
+
+  slides.forEach((slide) => {
+    // Find the image (mandatory)
+    const img = slide.querySelector('img');
+    if (!img) return;
+    // Try to find any text content in the slide
+    let textContent = '';
+    // Look for headings, paragraphs, or any text blocks inside the slide
+    const textBlocks = slide.querySelectorAll('h1, h2, h3, h4, h5, h6, p, .quote-text');
+    if (textBlocks.length > 0) {
+      // Combine all text blocks, preserving basic structure
+      textContent = Array.from(textBlocks).map((el) => el.cloneNode(true)).map((el) => el.outerHTML).join('');
     }
-    rows.push([img, textCell]);
+    // Always push a two-column row: image and text content (empty string if none)
+    rows.push([img, textContent]);
   });
 
-  // The cells array: header row (1 column), then each slide row (2 columns)
-  const cells = [headerRow, ...rows];
-  const block = WebImporter.DOMUtils.createTable(cells, document);
-  element.replaceWith(block);
+  // 4. Replace the original element with the block table
+  const table = WebImporter.DOMUtils.createTable(rows, document);
+  element.replaceWith(table);
 }
