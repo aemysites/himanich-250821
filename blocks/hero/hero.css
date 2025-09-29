@@ -45,3 +45,101 @@
     padding: 40px 32px;
   }
 }
+
+.hero.hero27 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 28px;
+  max-width: 440px;
+  margin: 40px auto;
+  padding: 0 0 12px;
+  box-shadow: 0 2px 8px rgb(40 40 40 / 7%);
+  box-sizing: border-box;
+  gap: 0;
+}
+
+/* Ensure heading is at the very top */
+.hero.hero27 > div:last-child {
+  order: -1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0 16px;
+}
+
+/* Heading styling: black default, more prominent, max-width for better line breaks */
+.hero.hero27 h1 {
+  font-size: 1.22rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  line-height: 1.12;
+  margin: 0;
+  padding: 18px 0 6px;
+  letter-spacing: 0.002em;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Heading emphasis: only nested link in red */
+.hero.hero27 h1 strong a {
+  color: #b00020;
+  font-weight: 700;
+}
+
+/* Make sure image is directly below heading */
+.hero.hero27 > div:first-child {
+  order: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove z-index from picture */
+.hero.hero27 picture {
+  position: static;
+  width: 100%;
+  display: block;
+}
+
+/* Image styling: fill card width, rounded corners */
+.hero.hero27 img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 22px;
+  display: block;
+  margin: 0;
+  box-shadow: none;
+}
+
+/* Responsive tweaks for mobile */
+@media (width <= 600px) {
+  .hero.hero27 {
+    max-width: 98vw;
+    padding: 0 0 5px;
+    border-radius: 12px;
+  }
+
+  .hero.hero27 img {
+    border-radius: 7px;
+  }
+
+  .hero.hero27 h1 {
+    font-size: 1.02rem;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    max-width: 98vw;
+  }
+
+  .hero.hero27 > div:last-child {
+    padding: 0 6px;
+  }
+}
