@@ -1,26 +1,78 @@
 {
   "templates": [
     {
-      "name": "'Content Grid Template'",
+      "name": "'Portfolio Showcase'",
       "cluster": 1,
       "pages": [
         {
-          "url": "https://www.wknd-trendsetters.site/blog/fashion-trends-young-style",
-          "uuid": "be00f351b0490d8b536bf724216d6530c30d5684"
+          "url": "https://familylikefriends.com/sitemap.html",
+          "uuid": "e9098ca714f7deb5b9fdd379c2a041694eb2070e"
         },
         {
-          "url": "https://www.wknd-trendsetters.site/blog/fashion-blog-post",
-          "uuid": "9b4d89f80efba6f8dbcb1e3da8ea8ffa8771a959"
+          "url": "https://familylikefriends.com/faqs.html",
+          "uuid": "733da547083d0fc70618f95f251b02de22e83e86"
+        },
+        {
+          "url": "https://familylikefriends.com/filmy-faces.html",
+          "uuid": "e60feb51086e3a3aba07754ceecc5f479a353319"
+        },
+        {
+          "url": "https://familylikefriends.com/adopt-with-love.html",
+          "uuid": "9fb2b28ed0d49ddbe9a5052f4d1cdbc65b37cdca"
+        },
+        {
+          "url": "https://familylikefriends.com/fantasy-recipes.html",
+          "uuid": "ab5785d5507b618ad2b18edfddc981245bd5685b"
+        },
+        {
+          "url": "https://familylikefriends.com/notifications.html",
+          "uuid": "2eb7fe070b244f9671d7893589633521e1507de0"
+        },
+        {
+          "url": "https://familylikefriends.com/family-frames.html",
+          "uuid": "51d0cefc216995c6eb1d74951e1d2092a612c6a7"
+        },
+        {
+          "url": "https://familylikefriends.com/login.html",
+          "uuid": "0e82b1b9e076aa16107c878ed2d13f0850cd8393"
+        },
+        {
+          "url": "https://familylikefriends.com/nameplate-pledge.html",
+          "uuid": "ca3c92871064335564023e19ac58895029bb8714"
+        },
+        {
+          "url": "https://familylikefriends.com/about-us.html",
+          "uuid": "60f5514cdf7ada6aa27a05eed550c25a941750af"
+        },
+        {
+          "url": "https://familylikefriends.com/privacy-policy.html",
+          "uuid": "b7ebba242a7e89621aa773dae12a0a9c709d6894"
+        },
+        {
+          "url": "https://familylikefriends.com/terms-and-conditions.html",
+          "uuid": "c83117b6417bb34c2a878e70fa4cd11ee2553e30"
+        },
+        {
+          "url": "https://familylikefriends.com/blogs.html",
+          "uuid": "51de2fe97950cc0a38212ec29b45b7abbd529d8b"
         }
       ]
     },
     {
-      "name": "'Portfolio Gallery'",
+      "name": "Mobile App Landing Page",
       "cluster": 2,
       "pages": [
         {
-          "url": "https://www.wknd-trendsetters.site/latest-trends-young-fashion",
-          "uuid": "f5e200536a2c91b06effaf661df0675e13f262b6"
+          "url": "https://familylikefriends.com/family-frames/upload-family-photo/frame-ready.html",
+          "uuid": "bb81995fe46598f0a356ee1322897ef676bcad95"
+        },
+        {
+          "url": "https://familylikefriends.com/family-frames/upload-family-photo/frame-listing.html",
+          "uuid": "4444fe7a7095ef0ed727ecaa2215163ac2c4b966"
+        },
+        {
+          "url": "https://familylikefriends.com/family-frames/upload-family-photo/memory-gallery.html",
+          "uuid": "a15625e2df6efba1e0db6feb9746353008d7c78c"
         }
       ]
     },
@@ -29,58 +81,114 @@
       "cluster": 3,
       "pages": [
         {
-          "url": "https://www.wknd-trendsetters.site/fashion-trends-young-adults",
-          "uuid": "d2dd722de7842a6232ce56b1307d383ff72c9358"
+          "url": "https://familylikefriends.com/filmy-faces/posters-listing/poster-ready.html",
+          "uuid": "0cc88c49ef339a1f183eef9670a5a6b1e65097db"
+        },
+        {
+          "url": "https://familylikefriends.com/filmy-faces/posters-listing/upload-faces.html",
+          "uuid": "a7f81da764c575d4b674fb04e14b239b13e6704c"
+        },
+        {
+          "url": "https://familylikefriends.com/filmy-faces/posters-listing/my-posters.html",
+          "uuid": "ac8c536328233dcdd9c63965254362033b97fff6"
+        },
+        {
+          "url": "https://familylikefriends.com/filmy-faces/posters-listing/created-poster-listing.html",
+          "uuid": "cb69dc418665d7b5f327a3cac90a963844e8a41e"
         }
       ]
     },
     {
-      "name": "'Dashboard Template'",
+      "name": "Vertical Gallery Template",
       "cluster": 4,
       "pages": [
         {
-          "url": "https://www.wknd-trendsetters.site/faq",
-          "uuid": "429d6f000c5a6e38a121160bf56d01b17365cffe"
+          "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing/paneer-butter-masala.html",
+          "uuid": "66b7ce90f9f2d6d4e5cc1b6265c5052fd99f4a78"
+        },
+        {
+          "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing/emoji-burger.html",
+          "uuid": "f9091b24673a5d9e2852d46894cfa097cf4b909c"
+        },
+        {
+          "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing/rocket-cheese-sandwich.html",
+          "uuid": "efddc41f7e0f6730823159fb2531c02851c425cf"
+        },
+        {
+          "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing/fruit-smoothie-bowl.html",
+          "uuid": "70ef92604ecd0bb54ebb62956f8d741809c5c4d8"
+        },
+        {
+          "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing/mountain-cheese-dosa.html",
+          "uuid": "53ed6e30c44df571d72db351b53de3ff53c9841c"
+        },
+        {
+          "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing/multicolor-idli.html",
+          "uuid": "a6282a3c4b3c354ea5c58e8b58cb5152f419cf45"
+        },
+        {
+          "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing/Aloo-Pinwheel-Paratha.html",
+          "uuid": "bb04d5e13236c729ea6bf82c496ea470d4b636d8"
+        },
+        {
+          "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing/fruit-fiesta.html",
+          "uuid": "84f7cb098384920f87e7c19c7f4ef40e6e24c1b2"
+        },
+        {
+          "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing/mini-podi-idlis.html",
+          "uuid": "109e12a4e57632bef495052d94888c9cf00586f9"
+        },
+        {
+          "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing/kuzi-paniyaram.html",
+          "uuid": "d7ffb767308dc8f9a251f782c473a313da2dd20f"
         }
       ]
     },
     {
-      "name": "Dashboard Overview",
+      "name": "Mobile-First Dashboard Template",
       "cluster": 5,
       "pages": [
         {
-          "url": "https://www.wknd-trendsetters.site/fashion-trends-young-adults-casual-sport",
-          "uuid": "1a14744466075b2d00884f27fb69e2633b6fcb84"
+          "url": "https://familylikefriends.com/content/family-like-friends/language-masters/en/login.html",
+          "uuid": "4478831229db64b7000b2e6203470fa539af01fa"
+        },
+        {
+          "url": "https://familylikefriends.com/content/family-like-friends/language-masters/en/privacy-policy.html",
+          "uuid": "9951ba668f0bd3a5622bdbdd52459a5b59f879b7"
+        },
+        {
+          "url": "https://familylikefriends.com/content/family-like-friends/language-masters/en/terms-and-conditions.html",
+          "uuid": "5df6112936883faa318dc13741989209eb2ca6c9"
         }
       ]
     },
     {
-      "name": "'Portfolio Showcase'",
+      "name": "'Multi-section Landing Page'",
       "cluster": 6,
       "pages": [
         {
-          "url": "https://www.wknd-trendsetters.site/blog/latest-trends-young-casual-fashion",
-          "uuid": "971148fccf483ccd07f6ef722bc01c7fb46f61d5"
+          "url": "https://familylikefriends.com/",
+          "uuid": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d"
         }
       ]
     },
     {
-      "name": "Gallery Grid Page",
+      "name": "Multi-section Landing Page",
       "cluster": 7,
       "pages": [
         {
-          "url": "https://www.wknd-trendsetters.site/fashion-trends-of-the-season",
-          "uuid": "1cfeb2756419a8f56a89a355f5557c3321845adb"
+          "url": "https://familylikefriends.com/login/profile.html",
+          "uuid": "a245af7c99bebcdcf3cdfdf66a6ce2fd1a4e5d2e"
         }
       ]
     },
     {
-      "name": "'Portfolio Showcase'",
+      "name": "\"Profile Page\"",
       "cluster": 8,
       "pages": [
         {
-          "url": "https://www.wknd-trendsetters.site/",
-          "uuid": "1b9ba84f36ee3a519917302a79dfd970725bae31"
+          "url": "https://familylikefriends.com/family-frames/upload-family-photo.html",
+          "uuid": "cb12e1a4fe9d3e655dc538015e35be8a33fd9401"
         }
       ]
     },
@@ -89,18 +197,56 @@
       "cluster": 9,
       "pages": [
         {
-          "url": "https://www.wknd-trendsetters.site/blog/fashion-trends-young-culture",
-          "uuid": "f5bdda3762c99b21ef3c8f0ca75cb53a00b4e8bf"
+          "url": "https://familylikefriends.com/filmy-faces/posters-listing.html",
+          "uuid": "eaf55531cfb9094c533d04a63959047764b38d94"
         }
       ]
     },
     {
-      "name": "'Portfolio Showcase'",
+      "name": "'Generic Content Page'",
       "cluster": 10,
       "pages": [
         {
-          "url": "https://www.wknd-trendsetters.site/fashion-insights",
-          "uuid": "67430c465ff7767e6ae98a0cffa44cd32754a351"
+          "url": "https://familylikefriends.com/blogs/10-fun-things-to-do-with-your-family-this-weekend.html",
+          "uuid": "b5ce8eb372150614ff50a5915e4199db4085ae26"
+        },
+        {
+          "url": "https://familylikefriends.com/blogs/10-fun-birthday-games-for-every-age.html",
+          "uuid": "4ce16617cd77cc4d8d5f4c34bbefc65a27eeeb70"
+        },
+        {
+          "url": "https://familylikefriends.com/blogs/10-best-bollywood-movies-for-a-fun-family-night.html",
+          "uuid": "8457833042dd3b83cf29cd19e5916c29c1adfee9"
+        },
+        {
+          "url": "https://familylikefriends.com/blogs/11-unforgettable-family-activities.html",
+          "uuid": "cb14866cb4f90f2562cc5bc10cbca2f09a14d02e"
+        },
+        {
+          "url": "https://familylikefriends.com/blogs/9-heartwarming-south-indian-family.html",
+          "uuid": "5b48431909d91b4d9233b5731828e9a9d996f76c"
+        },
+        {
+          "url": "https://familylikefriends.com/blogs/9-Heartwarming-Hindi-Family.html",
+          "uuid": "5a681c412a0437cc76dc648d46e93e667a328aba"
+        },
+        {
+          "url": "https://familylikefriends.com/blogs/Top-15-Family-Games.html",
+          "uuid": "842ba7922030a1ff97b5caaf914fdc03f76e0511"
+        },
+        {
+          "url": "https://familylikefriends.com/blogs/how-to-create-a-stunning-family-tree.html",
+          "uuid": "9fa8a51deb4ad7144a3609b59037d6fdd5687000"
+        }
+      ]
+    },
+    {
+      "name": "Gallery Showcase",
+      "cluster": 11,
+      "pages": [
+        {
+          "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing.html",
+          "uuid": "a363181f440954572f78b5a03f63629ca868ab4e"
         }
       ]
     }
