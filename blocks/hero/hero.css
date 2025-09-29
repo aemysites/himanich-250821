@@ -45,3 +45,23 @@
     padding: 40px 32px;
   }
 }
+
+.hero.hero5 {
+  background: #fff;
+  min-height: 300px;
+  padding: 40px 24px;
+  box-sizing: border-box;
+  display: block;
+}
+
+/* Hide all content inside the hero, but preserve the white space/structure */
+.hero.hero5 > div,
+.hero.hero5 > div > div,
+.hero.hero5 picture,
+.hero.hero5 img,
+.hero.hero5 h4,
+.hero.hero5 p,
+.hero.hero5 .button-container,
+.hero.hero5 .button {
+  display: none;
+}
