@@ -1,8 +1,8 @@
+/* stylelint-disable no-descending-specificity */
 .accordion details {
   border: 1px solid #dadada;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .accordion details + details {
   margin-top: 24px;
 }
@@ -58,4 +58,129 @@
 .accordion details[open] .accordion-item-body {
   border-top: 1px solid #dadada;
   background-color: var(--background-color);
+}
+
+
+.accordion.accordion13 {
+  background: #fff;
+  border: none;
+  padding: 0;
+}
+
+.accordion.accordion13 details {
+  background: #fff;
+  border: none;
+  margin: 0;
+  box-shadow: none;
+}
+
+.accordion.accordion13 details + details {
+  margin-top: 24px;
+}
+
+/* --- ROW FLEX LAYOUT --- */
+.accordion.accordion13 details summary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 18px;
+  padding-right: 40px;
+  min-height: 32px;
+  background: #fff;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  list-style: none;
+  overflow: visible;
+  outline: none;
+  color: #222;
+  position: relative;
+  z-index: 2;
+}
+
+/* Remove default marker */
+.accordion.accordion13 details summary::-webkit-details-marker,
+.accordion.accordion13 details summary::marker {
+  display: none;
+}
+
+/* --- QUESTION TEXT --- */
+.accordion.accordion13 .accordion-item-label {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.accordion.accordion13 .accordion-item-label p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --- PROPER HORIZONTAL MARKER (MINUS) --- */
+.accordion.accordion13 details summary::after {
+  display: block;
+  align-self: center;
+  width: 22px;
+  height: 0;
+  margin-left: 22px;
+  border-top: 3px solid #222;
+  border-radius: 1px;
+  background: none;
+  box-sizing: border-box;
+
+  /* Prevent any inherited transforms from base styles */
+  transform: none;
+
+  /* Prevent rotation from previously applied rules */
+}
+
+.accordion.accordion13 details[open] summary::after {
+  transform: none;
+}
+
+/* --- ANSWER BODY --- */
+.accordion.accordion13 .accordion-item-body {
+  padding: 0 18px;
+  margin: 0;
+}
+
+.accordion.accordion13 .accordion-item-body p {
+  font-size: 14px;
+  color: #333;
+  font-weight: normal;
+  margin: 8px 0 0;
+  line-height: 1.4;
+}
+
+/* --- MOBILE RESPONSIVE LAYOUT --- */
+@media (width <= 600px) {
+  .accordion.accordion13 details summary {
+    padding-left: 8px;
+    padding-right: 18px;
+    min-height: 26px;
+    font-size: 16px;
+  }
+
+  .accordion.accordion13 .accordion-item-label p {
+    font-size: 16px;
+  }
+
+  .accordion.accordion13 .accordion-item-body p {
+    font-size: 13px;
+  }
+
+  .accordion.accordion13 details summary::after {
+    width: 14px;
+    border-top-width: 2px;
+    margin-left: 10px;
+  }
 }
