@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .carousel .carousel-slides-container {
   position: relative;
 }
@@ -99,7 +100,6 @@
   z-index: 1;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .carousel .carousel-navigation-buttons button {
   position: relative;
   width: 44px;
@@ -150,4 +150,43 @@
   .carousel .carousel-slide .carousel-slide-content[data-align='justify'] {
     --slide-content-width: auto;
   }
+}
+
+
+.carousel.carousel29 {
+  background: linear-gradient(to bottom, #f8f8f8 0%, #fff 100%);
+  position: relative;
+}
+
+.carousel.carousel29 .carousel-slide {
+  background: none;
+  min-height: auto;
+  padding: 0;
+}
+
+.carousel.carousel29 .carousel-slide .carousel-slide-content {
+  display: none;
+}
+
+.carousel.carousel29 .carousel-navigation-buttons {
+  display: none;
+}
+
+.carousel.carousel29 .carousel-slide-indicators {
+  display: none;
+}
+
+.carousel.carousel29 .carousel-slide .carousel-slide-image picture,
+.carousel.carousel29 .carousel-slide .carousel-slide-image img {
+  position: static;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.carousel.carousel29 .carousel-slide .carousel-slide-image {
+  margin: 0;
+  padding: 0;
+  background: none;
 }
