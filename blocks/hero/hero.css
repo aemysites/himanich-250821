@@ -45,3 +45,69 @@
     padding: 40px 32px;
   }
 }
+
+.hero.hero22 {
+  background: #fff;
+  background-image: linear-gradient(to bottom, rgb(0 0 0 / 7%) 0, transparent 32px);
+  background-repeat: no-repeat;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 18px;
+  padding-bottom: 48px;
+  box-sizing: border-box;
+}
+
+/* Center the text block and let it size naturally */
+.hero.hero22 > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* Let the inner wrapper be as narrow as its content, but limit max width */
+.hero.hero22 > div:nth-child(2) > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Ensure the h2 is visible, centered, and sized to match the reference */
+.hero.hero22 h2 {
+  color: #191919;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 1.35;
+  background: none;
+  width: 100%;
+  letter-spacing: 0.01em;
+  box-sizing: border-box;
+}
+
+/* Responsive tweaks for mobile fidelity */
+@media (width <= 600px) {
+  .hero.hero22 {
+    padding-top: 10px;
+    padding-bottom: 32px;
+  }
+
+  .hero.hero22 > div:nth-child(2) > div {
+    max-width: 96vw;
+  }
+
+  .hero.hero22 h2 {
+    font-size: 16px;
+  }
+}
