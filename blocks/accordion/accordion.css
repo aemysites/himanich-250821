@@ -1,8 +1,6 @@
 .accordion details {
   border: 1px solid #dadada;
 }
-
-/* stylelint-disable-next-line no-descending-specificity */
 .accordion details + details {
   margin-top: 24px;
 }
@@ -58,4 +56,71 @@
 .accordion details[open] .accordion-item-body {
   border-top: 1px solid #dadada;
   background-color: var(--background-color);
+}
+
+
+.accordion.accordion10 details summary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 32px;
+  padding: 0 4px 0 6px;
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid #eeeeee;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.accordion.accordion10 details summary p {
+  margin: 0;
+  color: #222;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  flex: 1 1 auto;
+  align-self: center;
+}
+
+.accordion.accordion10 details summary::-webkit-details-marker,
+.accordion.accordion10 details summary::marker {
+  display: none;
+}
+
+/* Thinner, smaller, more flush chevron as a subtle icon */
+.accordion.accordion10 details summary::after {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  background: transparent;
+  vertical-align: middle;
+  position: relative;
+  top: 0; /* for perfect vertical centering */
+  right: 0;
+  border-radius: 0;
+  opacity: 0.7;
+  transform: rotate(45deg);
+}
+
+/* Open state: flip to upward chevron */
+.accordion.accordion10 details[open] summary::after {
+  border-right: none;
+  border-bottom: none;
+  border-left: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  transform: rotate(-45deg);
+  opacity: 0.7;
+}
+
+.accordion.accordion10 details .accordion-item-body,
+.accordion.accordion10 details[open] .accordion-item-body {
+  padding: 0 6px;
+  border: none;
+  background: #fff;
 }
