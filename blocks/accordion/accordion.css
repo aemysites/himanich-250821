@@ -1,8 +1,8 @@
+/* stylelint-disable no-descending-specificity */
 .accordion details {
   border: 1px solid #dadada;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .accordion details + details {
   margin-top: 24px;
 }
@@ -58,4 +58,140 @@
 .accordion details[open] .accordion-item-body {
   border-top: 1px solid #dadada;
   background-color: var(--background-color);
+}
+
+
+.accordion.accordion11 {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove outer margin/padding and ensure compact rows */
+.accordion.accordion11 .accordion-item {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+.accordion.accordion11 .accordion-item:last-child {
+  border-bottom: none;
+}
+
+/* FLEX: side by side, compact and centered */
+.accordion.accordion11 .accordion-item-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #fff;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Remove default browser marker */
+.accordion.accordion11 summary.accordion-item-label {
+  outline: none;
+  border: none;
+  transition: background 0.2s;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+.accordion.accordion11 summary.accordion-item-label::-webkit-details-marker {
+  display: none;
+}
+
+/* Question text: bold, dark, left-aligned, compact */
+.accordion.accordion11 .accordion-item-label p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #212121;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  text-align: left;
+}
+
+/* Plus/minus icon: both bars positioned absolutely at the same spot, creating a + or - */
+.accordion.accordion11 .accordion-item-label::before,
+.accordion.accordion11 .accordion-item-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 10px;
+  width: 16px;
+  height: 2px;
+  background: #757575;
+  border-radius: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+/* Horizontal bar: always visible */
+.accordion.accordion11 .accordion-item-label::before {
+  opacity: 1;
+}
+
+/* Vertical bar: only visible when closed (plus), hidden when open (minus) */
+.accordion.accordion11 .accordion-item-label::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.accordion.accordion11 details[open] .accordion-item-label::after {
+  opacity: 0;
+}
+
+.accordion.accordion11 details:not([open]) .accordion-item-label::after {
+  opacity: 1;
+}
+
+/* Answer body: smaller, lighter, flush with summary padding */
+.accordion.accordion11 .accordion-item-body {
+  background: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+.accordion.accordion11 .accordion-item-body p {
+  font-size: 12px;
+  color: #757575;
+  font-weight: 400;
+  margin: 6px 0 0;
+  padding: 0;
+}
+
+/* Remove excess spacing between items */
+.accordion.accordion11 .accordion-item + .accordion-item {
+  margin-top: 0;
+}
+
+/* Responsive: tighter padding for mobile */
+@media (width <= 600px) {
+  .accordion.accordion11 .accordion-item-label,
+  .accordion.accordion11 .accordion-item-body {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .accordion.accordion11 .accordion-item-label::before,
+  .accordion.accordion11 .accordion-item-label::after {
+    right: 4px;
+    width: 14px;
+  }
 }
