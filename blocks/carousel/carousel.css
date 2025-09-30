@@ -192,160 +192,98 @@
 }
 
 
-.carousel.carousel21 .carousel-slide {
-  background: #ffe9b2;
-  border-radius: 32px;
-  box-shadow: 0 8px 32px 0 rgb(0 0 0 / 10%);
-  padding: 0;
-  min-height: 720px;
-  max-width: 500px;
-  margin: 40px auto;
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: visible;
-}
-
-/* Inner content (heading, icon, subheading, sunburst) */
-.carousel.carousel21 .carousel-slide-content {
-  background: none;
-  margin: 0;
-  padding: 40px 32px 0;
-  width: 100%;
-  color: #223;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  z-index: 2;
-  min-height: 120px;
-  box-sizing: border-box;
-}
-
-/* Heading and subheading styles */
-.carousel.carousel21 .carousel-slide-content h1,
-.carousel.carousel21 .carousel-slide-content h2,
-.carousel.carousel21 .carousel-slide-content h3 {
-  margin: 0 0 8px;
-  font-weight: 700;
-  font-size: 1.32rem;
-  color: #222326;
-  letter-spacing: 0.01em;
-  line-height: 1.2;
-}
-
-.carousel.carousel21 .carousel-slide-content .card-subheading {
-  font-size: 1rem;
-  color: #a66a18;
-  margin-bottom: 16px;
-  margin-top: 0;
-  font-weight: 400;
-  opacity: 0.94;
-}
-
-/* Orange icon upper right */
-.carousel.carousel21 .carousel-slide-content .card-icon {
-  width: 32px;
-  height: 32px;
-  background: #ff9800;
-  border-radius: 50%;
-  position: absolute;
-  top: 2px;
-  right: 38px;
-  box-shadow: 0 2px 6px rgb(255 152 0 / 8%);
-  border: 1.5px solid #ffca76;
+/* Vertically and horizontally center the card fully in the viewport */
+.carousel.carousel21 {
+  background: #FFF9E3;
+  min-height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Sunburst graphic, top right, slightly overlapping image */
+/* Remove extra padding, so card sits flush left/right */
+.carousel.carousel21 .carousel-slides-container {
+  min-height: 100vh;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  padding-bottom: 96px;
+}
+
+/* Card: slightly reduced border-radius and more saturated pastel yellow */
+.carousel.carousel21 .carousel-slide {
+  border-radius: 22px;
+  background: #FFE09D;
+  box-shadow: none;
+  width: 540px;
+  max-width: 95vw;
+  height: 949px;
+  min-height: 949px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Image area: flush with card edges, rounded top, squared bottom */
+.carousel.carousel21 .carousel-slide-image {
+  width: 100%;
+  max-width: 100%;
+  margin: 34px 0 0;
+  border-radius: 22px 22px 0 0;
+  background: #fff;
+  box-shadow: none;
+  aspect-ratio: 470/709;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carousel.carousel21 .carousel-slide-image picture,
+.carousel.carousel21 .carousel-slide-image img {
+  border-radius: 22px 22px 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #fff;
+  display: block;
+}
+
+/* Content area: maintain soft spacing */
+.carousel.carousel21 .carousel-slide-content {
+  background: none;
+  margin: 0;
+  padding: 42px 36px 0;
+  width: 100%;
+  min-height: 120px;
+  color: #223;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+
+/* Sunburst and icon: nudge closer to edge */
 .carousel.carousel21 .carousel-slide-content .sunburst {
   position: absolute;
-  top: 38px;
-  right: 0;
+  top: 36px;
+  right: -34px;
   width: 76px;
   height: 76px;
-  background: conic-gradient(from 0deg, #ff9800 0deg 20deg, transparent 20deg 40deg, #ff9800 40deg 60deg, transparent 60deg 360deg);
-  border-top-right-radius: 38px;
   opacity: 0.33;
   pointer-events: none;
   z-index: 3;
 }
 
-/* Main image styling */
-.carousel.carousel21 .carousel-slide-image {
-  width: 88%;
-  max-width: 470px;
-  aspect-ratio: 470/709;
-  border-radius: 28px;
-  overflow: hidden;
-  background: #fff;
-  margin: 26px auto 0;
-  box-shadow: 0 3px 18px rgb(80 80 80 / 10%);
-  position: relative;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.carousel.carousel21 .carousel-slide-content .card-icon {
+  top: 2px;
+  right: 20px;
 }
 
-/* Image: fully rounded corners, fills container */
-.carousel.carousel21 .carousel-slide-image picture,
-.carousel.carousel21 .carousel-slide-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 28px;
-  display: block;
-  background: #fff;
-}
-
-/* Remove unwanted overlays/bars */
-.carousel.carousel21 .carousel-slide-image::before,
-.carousel.carousel21 .carousel-slide-image::after,
-.carousel.carousel21 .carousel-slide-image .carousel-slide-image-overlay {
-  display: none;
-}
-
-/* Responsive adjustments */
-@media (width <= 650px) {
-  .carousel.carousel21 .carousel-slide {
-    max-width: 98vw;
-    border-radius: 18px;
-    min-height: unset;
-  }
-
-  .carousel.carousel21 .carousel-slide-content {
-    padding: 24px 10px 0;
-    min-height: 64px;
-  }
-
-  .carousel.carousel21 .carousel-slide-image {
-    width: 98vw;
-    max-width: 98vw;
-    border-radius: 14px;
-    margin-top: 10px;
-  }
-
-  .carousel.carousel21 .carousel-slide-image picture,
-  .carousel.carousel21 .carousel-slide-image img {
-    border-radius: 14px;
-  }
-
-  .carousel.carousel21 .carousel-slide-content .sunburst {
-    width: 56px;
-    height: 56px;
-    top: 24px;
-    right: -8px;
-    border-top-right-radius: 28px;
-  }
-}
-
-/* Hide nav/indicators as before */
-.carousel.carousel21 .carousel-navigation-buttons,
-.carousel.carousel21 .carousel-slide-indicators {
-  display: none;
-}
+/* Add breathing space at card bottom for nav bar */
