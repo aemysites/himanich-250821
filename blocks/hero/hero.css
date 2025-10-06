@@ -45,3 +45,30 @@
     padding: 40px 32px;
   }
 }
+
+.hero.hero2 {
+  background: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 54px; /* closely matches the original image's apparent height */
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid #da8855;
+  position: relative;
+
+  /* Remove any default padding or min-height from previous hero styles */
+}
+
+/* Visually hide the image and all content but keep them in the DOM for semantics/accessibility */
+.hero.hero2 > div {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Prevent internal margin from affecting hero height */
+.hero.hero2 * {
+  margin: 0;
+  padding: 0;
+}

@@ -1,25 +1,42 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Prepare the table header
+  // Defensive: ensure we have the expected structure
+  // Header row as per block guidelines
   const headerRow = ['Accordion (accordion13)'];
+  const rows = [headerRow];
 
-  // Collect all accordion items: each is a .divider direct child of the root
-  // Each .divider contains a .w-layout-grid with first child = title, second child = content
-  const rows = [];
-  element.querySelectorAll(':scope > .divider').forEach(divider => {
-    // Find the grid
-    const grid = divider.querySelector('.w-layout-grid');
-    if (!grid || grid.children.length < 2) return;
-    // Reference existing elements
-    const title = grid.children[0];       // Usually .h4-heading
-    const content = grid.children[1];     // Usually .rich-text
-    rows.push([title, content]);
-  });
+  // Accordion item title: find the span inside the button
+  let titleEl = null;
+  const header = element.querySelector('.cmp-accordion__header');
+  if (header) {
+    const button = header.querySelector('button');
+    if (button) {
+      titleEl = button.querySelector('.cmp-accordion__title');
+    }
+  }
 
-  // Compose the table
-  const cells = [headerRow, ...rows];
-  const block = WebImporter.DOMUtils.createTable(cells, document);
+  // Accordion item content: find the panel
+  let contentEl = null;
+  const panel = element.querySelector('[data-cmp-hook-accordion="panel"]');
+  if (panel) {
+    // Defensive: grab the first child div with class 'text' or all children
+    const textDiv = panel.querySelector('.text');
+    if (textDiv) {
+      contentEl = textDiv;
+    } else {
+      // fallback: use panel itself
+      contentEl = panel;
+    }
+  }
 
-  // Replace the original element with the new block table
-  element.replaceWith(block);
+  // Build the row for this accordion item
+  // Use the element references directly
+  const row = [titleEl || '', contentEl || ''];
+  rows.push(row);
+
+  // Create the table block
+  const table = WebImporter.DOMUtils.createTable(rows, document);
+
+  // Replace the original element with the new table
+  element.replaceWith(table);
 }

@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .carousel .carousel-slides-container {
   position: relative;
 }
@@ -99,7 +100,6 @@
   z-index: 1;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .carousel .carousel-navigation-buttons button {
   position: relative;
   width: 44px;
@@ -151,3 +151,139 @@
     --slide-content-width: auto;
   }
 }
+
+
+.carousel.carousel29 {
+  background: linear-gradient(to bottom, #f8f8f8 0%, #fff 100%);
+  position: relative;
+}
+
+.carousel.carousel29 .carousel-slide {
+  background: none;
+  min-height: auto;
+  padding: 0;
+}
+
+.carousel.carousel29 .carousel-slide .carousel-slide-content {
+  display: none;
+}
+
+.carousel.carousel29 .carousel-navigation-buttons {
+  display: none;
+}
+
+.carousel.carousel29 .carousel-slide-indicators {
+  display: none;
+}
+
+.carousel.carousel29 .carousel-slide .carousel-slide-image picture,
+.carousel.carousel29 .carousel-slide .carousel-slide-image img {
+  position: static;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.carousel.carousel29 .carousel-slide .carousel-slide-image {
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+
+/* Vertically and horizontally center the card fully in the viewport */
+.carousel.carousel21 {
+  background: #FFF9E3;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Remove extra padding, so card sits flush left/right */
+.carousel.carousel21 .carousel-slides-container {
+  min-height: 100vh;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  padding-bottom: 96px;
+}
+
+/* Card: slightly reduced border-radius and more saturated pastel yellow */
+.carousel.carousel21 .carousel-slide {
+  border-radius: 22px;
+  background: #FFE09D;
+  box-shadow: none;
+  width: 540px;
+  max-width: 95vw;
+  height: 949px;
+  min-height: 949px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Image area: flush with card edges, rounded top, squared bottom */
+.carousel.carousel21 .carousel-slide-image {
+  width: 100%;
+  max-width: 100%;
+  margin: 34px 0 0;
+  border-radius: 22px 22px 0 0;
+  background: #fff;
+  box-shadow: none;
+  aspect-ratio: 470/709;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carousel.carousel21 .carousel-slide-image picture,
+.carousel.carousel21 .carousel-slide-image img {
+  border-radius: 22px 22px 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #fff;
+  display: block;
+}
+
+/* Content area: maintain soft spacing */
+.carousel.carousel21 .carousel-slide-content {
+  background: none;
+  margin: 0;
+  padding: 42px 36px 0;
+  width: 100%;
+  min-height: 120px;
+  color: #223;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+
+/* Sunburst and icon: nudge closer to edge */
+.carousel.carousel21 .carousel-slide-content .sunburst {
+  position: absolute;
+  top: 36px;
+  right: -34px;
+  width: 76px;
+  height: 76px;
+  opacity: 0.33;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.carousel.carousel21 .carousel-slide-content .card-icon {
+  top: 2px;
+  right: 20px;
+}
+
+/* Add breathing space at card bottom for nav bar */
