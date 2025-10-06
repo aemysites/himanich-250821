@@ -1946,13 +1946,6 @@
         {
           "url": "https://familylikefriends.com/",
           "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
-          "uuid": "3b3fdbd7-10-0c0685266747c7af1d8d418d0aa84abb6e61a54a",
-          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[10]/div[1]/div[2]/div[1]/div[1]",
-          "section": "section-11"
-        },
-        {
-          "url": "https://familylikefriends.com/",
-          "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
           "uuid": "3b3fdbd7-15-d98cdf0358a6881125abf4d12b9d9df814d8f285",
           "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[10]/div[1]/div[2]/div[1]/div[2]",
           "section": "section-11"
@@ -2187,6 +2180,19 @@
           "uuid": "cb14866c-01-3e0fe1cecf76e15ff86bdc3d3f660cb39770767e",
           "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]",
           "section": "section-2"
+        }
+      ]
+    },
+    {
+      "name": "Carousel",
+      "cluster": 32,
+      "instances": [
+        {
+          "url": "https://familylikefriends.com/",
+          "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+          "uuid": "3b3fdbd7-10-0c0685266747c7af1d8d418d0aa84abb6e61a54a",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[10]/div[1]/div[2]/div[1]/div[1]",
+          "section": "section-11"
         }
       ]
     }
