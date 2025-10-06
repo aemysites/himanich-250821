@@ -1,0 +1,216 @@
+{
+  "fragments": [
+    {
+      "name": "nav",
+      "path": "/nav",
+      "totalBoxes": 1,
+      "instances": [
+        {
+          "url": "https://familylikefriends.com/",
+          "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+          "uuid": "3b3fdbd7-00-ec260e70fd0d109a7b00561467202bbb97cfb965",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]"
+        }
+      ],
+      "styles": {
+        "height": 56,
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box"
+      }
+    },
+    {
+      "name": "footer",
+      "path": "/footer",
+      "totalBoxes": 1,
+      "instances": [
+        {
+          "url": "https://familylikefriends.com/",
+          "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+          "uuid": "3b3fdbd7-15-d98cdf0358a6881125abf4d12b9d9df814d8f285",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[10]/div[1]/div[2]/div[1]/div[2]"
+        }
+      ],
+      "styles": {
+        "background": "rgb(255, 226, 164) none repeat scroll 0% 0% / auto padding-box border-box"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "name": "header",
+      "cluster": 1,
+      "source": "Header",
+      "target": "Header (header1)",
+      "key": "header1",
+      "instances": [
+        {
+          "url": "https://familylikefriends.com/",
+          "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+          "uuid": "3b3fdbd7-00-ec260e70fd0d109a7b00561467202bbb97cfb965",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 2,
+      "source": "Hero",
+      "target": "Hero (hero2)",
+      "key": "hero2",
+      "instances": [
+        {
+          "url": "https://familylikefriends.com/",
+          "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+          "uuid": "3b3fdbd7-06-602a211b63ed9b844328bb54e311475bac7a2d26",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[7]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 3,
+      "source": "Columns",
+      "target": "Columns (columns3)",
+      "key": "columns3",
+      "instances": [
+        {
+          "url": "https://familylikefriends.com/",
+          "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+          "uuid": "3b3fdbd7-13-e896f1167b70f17623ca68f1b6cc3d97dbf6dec8",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/section[1]/div[1]/section[1]",
+          "section": "section-5"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 4,
+      "source": "Cards",
+      "target": "Cards (cards4)",
+      "key": "cards4",
+      "instances": [
+        {
+          "url": "https://familylikefriends.com/",
+          "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+          "uuid": "3b3fdbd7-10-0c0685266747c7af1d8d418d0aa84abb6e61a54a",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[10]/div[1]/div[2]/div[1]/div[1]",
+          "section": "section-4"
+        },
+        {
+          "url": "https://familylikefriends.com/",
+          "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+          "uuid": "3b3fdbd7-15-d98cdf0358a6881125abf4d12b9d9df814d8f285",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[10]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-4"
+        }
+      ]
+    }
+  ],
+  "outliers": [
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-01-3e0fe1cecf76e15ff86bdc3d3f660cb39770767e",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-02-1e58652da4f294eafb54cc2854125d52c8b52a21",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-03-a8d96cdc7abff5f171af14ebdd7f6d5a6fd9e832",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[4]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-04-1d59afa3eb0797074735253c9f211108678e9c47",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[5]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-05-06ea0f4a4b7d1de86bfd0df45397648fc078463a",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[6]",
+      "section": "section-3"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-07-f11e1840b6e7a737ecf71dfad6fdbfa9e412050b",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[8]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-08-1bbd9a9329c068f66f529fb5f71d9e10ca1d8898",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[9]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-09-e02adc9ae7964c36e3ad6ce2129322d63f397f6e",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[10]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-11-fec780b80e3998fc6f37e79bb82c9c3939f56218",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[10]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-12-d72caa907dc624342957e5b0bf1f3f76c63d7ee7",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[3]",
+      "section": "section-5"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-14-98c9bb318b801d40d7a6a986f3def330b6928496",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/section[1]/div[1]/section[2]",
+      "section": "section-5"
+    }
+  ],
+  "sections": [
+    {
+      "name": "section-1",
+      "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 8
+    },
+    {
+      "name": "section-2",
+      "background": "rgb(254, 245, 235) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 2
+    },
+    {
+      "name": "section-3",
+      "background": "rgb(187, 31, 59) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 1
+    },
+    {
+      "name": "section-4",
+      "background": "rgb(255, 226, 164) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 2
+    },
+    {
+      "name": "section-5",
+      "background": "rgb(243, 121, 6) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 3
+    }
+  ]
+}
