@@ -1,15 +1,21 @@
 {
   "originUrl": "https://familylikefriends.com",
   "aborted": false,
-  "lastCrawled": "https://familylikefriends.com",
   "urls": [
     {
       "url": "https://familylikefriends.com/",
-      "source": "CRAWL",
+      "source": "MANUAL",
       "targetPath": "/",
       "id": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d"
+    },
+    {
+      "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing.html",
+      "source": "MANUAL",
+      "targetPath": "/fantasy-recipes/recipe-listing",
+      "id": "a363181f440954572f78b5a03f63629ca868ab4e"
     }
   ],
+  "lastCrawled": "MANUAL",
   "crawlOptions": {
     "timeout": 10000,
     "inclusionPatterns": [],
@@ -17,14 +23,11 @@
     "limit": 100,
     "sameDomain": true,
     "keepHash": false,
-    "strategy": "crawl",
-    "logger": {},
+    "strategy": "manual",
     "strategiesAttempted": [
-      "SITEMAPS",
-      "CRAWL"
+      "MANUAL"
     ]
   },
   "extractionErrors": [],
-  "errorCountMessage": "none",
-  "error": null
+  "errorCountMessage": "none"
 }
