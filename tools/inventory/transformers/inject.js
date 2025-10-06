@@ -12,7 +12,7 @@
 /* eslint-disable no-console */
 (() => {
   // remove left navigation, header, and footer elements if present
-  ['.left-nav', 'header.header', 'footer.footer'].forEach((selector) => {
+  ['.cmp-experiencefragment--header', '.cmp-experiencefragment--footer'].forEach((selector) => {
     document.querySelectorAll(selector).forEach((el) => el.remove());
   });
 })();
