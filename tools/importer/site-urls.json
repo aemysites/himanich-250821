@@ -13,6 +13,12 @@
       "source": "MANUAL",
       "targetPath": "/fantasy-recipes/recipe-listing",
       "id": "a363181f440954572f78b5a03f63629ca868ab4e"
+    },
+    {
+      "url": "https://familylikefriends.com/filmy-faces.html",
+      "source": "MANUAL",
+      "targetPath": "/filmy-faces",
+      "id": "e60feb51086e3a3aba07754ceecc5f479a353319"
     }
   ],
   "lastCrawled": "MANUAL",
