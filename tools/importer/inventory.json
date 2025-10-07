@@ -1,0 +1,319 @@
+{
+  "fragments": [
+    {
+      "name": "nav",
+      "path": "/nav",
+      "totalBoxes": 1,
+      "instances": [
+        {
+          "url": "https://familylikefriends.com/",
+          "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+          "uuid": "3b3fdbd7-00-3e0fe1cecf76e15ff86bdc3d3f660cb39770767e",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]"
+        },
+        {
+          "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing.html",
+          "urlHash": "a363181f440954572f78b5a03f63629ca868ab4e",
+          "uuid": "a363181f-00-4130e0169ed4c673a7f233fd2e283b1580f034f9",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]"
+        },
+        {
+          "url": "https://familylikefriends.com/filmy-faces.html",
+          "urlHash": "e60feb51086e3a3aba07754ceecc5f479a353319",
+          "uuid": "e60feb51-00-3e0fe1cecf76e15ff86bdc3d3f660cb39770767e",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]"
+        }
+      ],
+      "styles": {
+        "height": 296,
+        "background": "rgb(243, 121, 6) none repeat scroll 0% 0% / auto padding-box border-box"
+      }
+    },
+    {
+      "name": "footer",
+      "path": "/footer",
+      "totalBoxes": 1,
+      "instances": [
+        {
+          "url": "https://familylikefriends.com/",
+          "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+          "uuid": "3b3fdbd7-12-d98cdf0358a6881125abf4d12b9d9df814d8f285",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[10]/div[1]/div[2]/div[1]/div[2]"
+        },
+        {
+          "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing.html",
+          "urlHash": "a363181f440954572f78b5a03f63629ca868ab4e",
+          "uuid": "a363181f-04-8d159c2453d933e2534467f8530b716cfccb0617",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[5]"
+        },
+        {
+          "url": "https://familylikefriends.com/filmy-faces.html",
+          "urlHash": "e60feb51086e3a3aba07754ceecc5f479a353319",
+          "uuid": "e60feb51-08-1a8d5dde8cd2aa1379f5f876d816df0ab4bacd1d",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/div[2]"
+        }
+      ],
+      "styles": {
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Carousel",
+      "cluster": 1,
+      "source": "Carousel",
+      "target": "Carousel (carousel1)",
+      "key": "carousel1",
+      "instances": [
+        {
+          "url": "https://familylikefriends.com/",
+          "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+          "uuid": "3b3fdbd7-05-602a211b63ed9b844328bb54e311475bac7a2d26",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[7]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 2,
+      "source": "Cards",
+      "target": "Cards (cards2)",
+      "key": "cards2",
+      "instances": [
+        {
+          "url": "https://familylikefriends.com/",
+          "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+          "uuid": "3b3fdbd7-09-0c0685266747c7af1d8d418d0aa84abb6e61a54a",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[10]/div[1]/div[2]/div[1]/div[1]",
+          "section": "section-4"
+        },
+        {
+          "url": "https://familylikefriends.com/",
+          "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+          "uuid": "3b3fdbd7-12-d98cdf0358a6881125abf4d12b9d9df814d8f285",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[10]/div[1]/div[2]/div[1]/div[2]",
+          "section": "section-4"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 3,
+      "source": "Cards",
+      "target": "Cards (cards3)",
+      "key": "cards3",
+      "instances": [
+        {
+          "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing.html",
+          "urlHash": "a363181f440954572f78b5a03f63629ca868ab4e",
+          "uuid": "a363181f-03-0a23aa31bcb41194cbfb2ba3ab5e089647731090",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "unknown",
+      "cluster": 4,
+      "instances": [
+        {
+          "url": "https://familylikefriends.com/filmy-faces.html",
+          "urlHash": "e60feb51086e3a3aba07754ceecc5f479a353319",
+          "uuid": "e60feb51-06-f11e1840b6e7a737ecf71dfad6fdbfa9e412050b",
+          "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[8]",
+          "section": "section-6"
+        }
+      ]
+    }
+  ],
+  "outliers": [
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-00-3e0fe1cecf76e15ff86bdc3d3f660cb39770767e",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-01-1e58652da4f294eafb54cc2854125d52c8b52a21",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-02-a8d96cdc7abff5f171af14ebdd7f6d5a6fd9e832",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[4]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-03-1d59afa3eb0797074735253c9f211108678e9c47",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[5]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-04-06ea0f4a4b7d1de86bfd0df45397648fc078463a",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[6]",
+      "section": "section-3"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-06-f11e1840b6e7a737ecf71dfad6fdbfa9e412050b",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[8]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-07-1bbd9a9329c068f66f529fb5f71d9e10ca1d8898",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[9]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-08-e02adc9ae7964c36e3ad6ce2129322d63f397f6e",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[10]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-10-fec780b80e3998fc6f37e79bb82c9c3939f56218",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[10]/div[1]/div[3]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/",
+      "urlHash": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d",
+      "uuid": "3b3fdbd7-11-d72caa907dc624342957e5b0bf1f3f76c63d7ee7",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[3]",
+      "section": "section-5"
+    },
+    {
+      "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing.html",
+      "urlHash": "a363181f440954572f78b5a03f63629ca868ab4e",
+      "uuid": "a363181f-00-4130e0169ed4c673a7f233fd2e283b1580f034f9",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing.html",
+      "urlHash": "a363181f440954572f78b5a03f63629ca868ab4e",
+      "uuid": "a363181f-01-d4fe0aaf083cd6351010828dae0b5b96906334d4",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing.html",
+      "urlHash": "a363181f440954572f78b5a03f63629ca868ab4e",
+      "uuid": "a363181f-02-f7612aa86949e3f5fca6666730d99bfa26a7115c",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/ol[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing.html",
+      "urlHash": "a363181f440954572f78b5a03f63629ca868ab4e",
+      "uuid": "a363181f-04-8d159c2453d933e2534467f8530b716cfccb0617",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[5]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/filmy-faces.html",
+      "urlHash": "e60feb51086e3a3aba07754ceecc5f479a353319",
+      "uuid": "e60feb51-00-3e0fe1cecf76e15ff86bdc3d3f660cb39770767e",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]",
+      "section": "section-5"
+    },
+    {
+      "url": "https://familylikefriends.com/filmy-faces.html",
+      "urlHash": "e60feb51086e3a3aba07754ceecc5f479a353319",
+      "uuid": "e60feb51-01-aa79753c20fc362414b15da3eee112295f88329d",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[2]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/filmy-faces.html",
+      "urlHash": "e60feb51086e3a3aba07754ceecc5f479a353319",
+      "uuid": "e60feb51-02-1e58652da4f294eafb54cc2854125d52c8b52a21",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[3]",
+      "section": "section-5"
+    },
+    {
+      "url": "https://familylikefriends.com/filmy-faces.html",
+      "urlHash": "e60feb51086e3a3aba07754ceecc5f479a353319",
+      "uuid": "e60feb51-03-a8d96cdc7abff5f171af14ebdd7f6d5a6fd9e832",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[4]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/filmy-faces.html",
+      "urlHash": "e60feb51086e3a3aba07754ceecc5f479a353319",
+      "uuid": "e60feb51-04-1d59afa3eb0797074735253c9f211108678e9c47",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[5]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/filmy-faces.html",
+      "urlHash": "e60feb51086e3a3aba07754ceecc5f479a353319",
+      "uuid": "e60feb51-05-602a211b63ed9b844328bb54e311475bac7a2d26",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[7]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://familylikefriends.com/filmy-faces.html",
+      "urlHash": "e60feb51086e3a3aba07754ceecc5f479a353319",
+      "uuid": "e60feb51-07-d72caa907dc624342957e5b0bf1f3f76c63d7ee7",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[3]",
+      "section": "section-5"
+    },
+    {
+      "url": "https://familylikefriends.com/filmy-faces.html",
+      "urlHash": "e60feb51086e3a3aba07754ceecc5f479a353319",
+      "uuid": "e60feb51-08-1a8d5dde8cd2aa1379f5f876d816df0ab4bacd1d",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/div[2]",
+      "section": "section-1"
+    }
+  ],
+  "sections": [
+    {
+      "name": "section-1",
+      "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 17
+    },
+    {
+      "name": "section-2",
+      "background": "rgb(254, 245, 235) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 2
+    },
+    {
+      "name": "section-3",
+      "background": "rgb(187, 31, 59) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 1
+    },
+    {
+      "name": "section-4",
+      "background": "rgb(255, 226, 164) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 2
+    },
+    {
+      "name": "section-5",
+      "background": "rgb(243, 121, 6) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 4
+    },
+    {
+      "name": "section-6",
+      "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box padding-box",
+      "count": 1
+    }
+  ]
+}

@@ -1,3 +1,28 @@
 {
-  "templates": []
+  "templates": [
+    {
+      "name": "'Content Hub'",
+      "cluster": 1,
+      "pages": [
+        {
+          "url": "https://familylikefriends.com/filmy-faces.html",
+          "uuid": "e60feb51086e3a3aba07754ceecc5f479a353319"
+        },
+        {
+          "url": "https://familylikefriends.com/",
+          "uuid": "3b3fdbd78480c3a5b87ad2f2f3c3df0270976d7d"
+        }
+      ]
+    },
+    {
+      "name": "Card Grid Listing",
+      "cluster": 2,
+      "pages": [
+        {
+          "url": "https://familylikefriends.com/fantasy-recipes/recipe-listing.html",
+          "uuid": "a363181f440954572f78b5a03f63629ca868ab4e"
+        }
+      ]
+    }
+  ]
 }
